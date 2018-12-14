@@ -49,7 +49,7 @@
               <div class="shopping-cart-null" v-show="shoppingCart.length <= 0">
                 <Icon type="ios-cart-outline" class="cart-null-icon"></Icon>
                 <span>你的购物车没有空空哦</span>
-                <span>赶快去添加商品吧~</span>
+                <span>赶快去添加课程吧~</span>
               </div>
               <div class="shopping-cart-list" v-show="shoppingCart.length > 0">
                 <div class="shopping-cart-box" v-for="(item,index) in shoppingCart" :key="index">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="shopping-cart-detail">
                       <p>
-                        套餐:
+                        课程:
                         <span class="shopping-cart-text">
                           {{item.package}}
                         </span>
@@ -89,7 +89,7 @@
         </li>
         <li><router-link to="/">网站导航</router-link></li>
         <li><router-link to="/freeback">意见反馈</router-link></li>
-        <li><router-link to="/">商城首页</router-link></li>
+        <li><router-link to="/">课程首页</router-link></li>
       </ul>
     </div>
   </div>
